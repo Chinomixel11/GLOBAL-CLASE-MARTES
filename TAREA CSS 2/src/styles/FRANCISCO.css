@@ -1,0 +1,233 @@
+/********* BODY *********/
+html {font-family: Arial, Helvetica, sans-serif;
+margin-top: 0;
+cursor:crosshair;
+background-image: url(../assets/images/NUBE\ 3.jpg);
+background-position: center center;
+background-repeat: no-repeat;
+background-size: cover;
+background-attachment: fixed;
+margin: 0;
+padding: 0;
+font-size: 16px;
+}
+
+/************** CUSTOM PROPERTIES **************/
+:root {
+  --primary-color: rgb(50, 93, 174); 
+  --primary-alpha-color: rgba(50, 93, 174, 0.8); 
+  --secondary-color: rgb(150, 156, 43);
+  --white-color: rgb(255, 255, 255);
+  --primary-font: "Amatic SC", cursive;
+}
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+/********* NAVIGATION *********/
+a {
+  text-decoration: none;
+  text-shadow: 3px 3px 5px #000000;
+  font-family: var(--primary-font);
+  color: var(--white-color);
+  
+  
+}
+
+nav a:hover {
+  color: rgb(255, 255, 255);
+  }
+
+.nav-logo img {
+  width: 100px;
+  height: 100px;
+}
+
+.nav-container {
+  display: flex;
+  top: 0;
+  left: 0;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2%;
+  position: fixed;
+  width: 100%;
+  transition: 0.3s;
+  z-index: 1000;
+
+
+  & .nav-logo {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    font-size: 12px;
+    }
+
+  & .Otras-Paginas {
+    display: flex;
+    column-gap: 50px;
+    font-size: 1rem;
+    
+    }
+    
+  & .Otras-Paginas a {
+    transition: 0.4s;
+    }
+    
+  & .Otras-Paginas a:hover {
+    color: var(--secondary-color);
+      
+    }
+  
+}  
+.nav_active {
+  background-color: var(--primary-color);
+}
+
+
+/******** main   ********/
+h1{
+    color: #fff;
+    text-align: center;
+    font-size: 3em;
+    margin-top: 0.5em;
+    text-shadow: 2px 2px 4px #000000;
+    text-decoration: underline;
+    text-decoration-color: #000000;
+        
+    }
+    
+h2{
+    color: #fff;
+    text-align: center;
+    font-size: 1.8em;
+    margin-top: 0.5em;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+h3{
+    color: #fff;
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 0.5em;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+h4{
+    color: #fff;
+    text-align: center;
+    font-size: 1.9em;
+    margin-top: 0.5em;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+h5{
+    color: #fff;
+    text-align: center;
+    font-size: 1em;
+    margin-top: 0.5em;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+p {
+    color: #fff;
+    text-align: center;
+    font-size: 1em;
+    margin-top: 0.5em;
+    text-shadow: 4px 4px 4px #000000;
+}
+
+aside img{
+    margin-top: 0.5em;
+    margin-left: 10px;
+    border-radius: 10px;
+    border-color: #d3ae18;      
+    border-style:inset;
+    border-width: 5px;
+    height: 98%;
+    width: 98%;
+    
+}
+
+div {
+    text-align: center;
+    margin-top: 0.5em;
+    font-size: 1.5em;
+}
+
+
+/******** footer   ********/
+    article img {
+    text-align: center;
+    margin-top: 0.5em; 
+    height: 50px;
+    width: 50px;
+    }
+
+    @media (max-width: 768px) {
+
+  body {
+    padding-top: 0;
+  }
+
+
+  .nav-container {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 2%;
+  }
+
+  .Otras-Paginas {
+    flex-direction: column;
+    width: 100%;
+    row-gap: 10px;
+    column-gap: 0;
+    font-size: 1.1rem;
+  }
+
+  .Otras-Paginas a {
+    width: 100%;
+    display: block;
+    padding: 10px 0;
+    text-align: left;
+    padding-left: 16px;
+  }
+  .nav-logo img {
+    padding-left: 16px; /* Ajusta el valor según lo necesites */
+  }
+  .nav-logo {
+    padding-left: 16px; /* Ajusta el valor según lo necesites */
+  }
+  .btn {
+    margin-left: 16px; /* Espacio desde el margen izquierdo, ajusta el valor según lo necesites */
+  }
+
+  .HOME {
+    height: 86vh; /* Reduce la altura en móvil */
+    padding-top: 40%; /* Reduce el espacio superior en móvil */
+  }
+
+  .HOME h1 {
+    width: 100vw;
+    font-size: 2.5rem;      /* Ajusta el tamaño según lo necesites */
+    line-height: 1.2;     /* Mejora la legibilidad */
+    text-align:left;   /* Centra el texto en móviles */
+    padding: 0 10px;      /* Añade espacio lateral si es necesario */
+    word-break: break-word; /* Permite que las palabras largas se dividan */
+    box-sizing: border-box;
+    margin-top: 35%; /* Añade un margen superior para separar del logo */
+
+  }
+  .nav_active {
+    background-color: var(--primary-alpha-color); /* Cambia el color o cualquier propiedad */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);  /* Ejemplo de sombra */
+    /* Puedes agregar más estilos específicos para móvil */
+  }
+
+}
+  
