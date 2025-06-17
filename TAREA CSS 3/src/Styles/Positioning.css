@@ -1,0 +1,156 @@
+/******************** Root Styles ********************/
+/* Quita márgenes y rellenos del body y html */
+html, body {
+    margin: 0;
+    height: 100%;
+     }
+    
+:root {
+    --primary-color: rgb(8, 129, 56); 
+    --secondary-color: rgb(227, 211, 20); 
+    --tertiary-color: rgb(127, 140, 141); 
+    --white-color: rgb(255, 255, 255); 
+  }
+
+/******************** NAV ********************/
+.login {
+    width: 100%;
+    height: 35px;
+    padding-right: 15px; 
+    box-sizing: border-box; 
+    display: flex;
+    justify-content:flex-end;
+    background-color: var(--primary-color);
+
+    & a {
+        color: var(--white-color);
+        text-decoration: none;
+        font-size: 15px;
+        padding: 2px 8px;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+            background-color: var(--secondary-color);
+        }
+    }
+    
+}
+
+/******************** LOGO ********************/
+
+.logo {
+    width: 1150px;
+    height: 150px;
+    display: flex;    
+    align-items: center;    
+    justify-content: flex-end;
+    padding-left: 20px;
+    background-color: var(--white-color);
+
+    & form {
+        border: 8px solid var(--primary-color);
+        border-radius: 200px;
+
+    }
+
+    & .Imagen-centro {
+        width: 120px;
+        height: 120px;
+        margin: 0 auto;
+        display: block;
+        
+    }
+    
+    & .Changuito { 
+    align-items: flex-end;
+    width: 80px;
+    display: flex; 
+    align-items: center;    
+    justify-content: center;    
+    border: 10px solid var(--primary-color);
+    border-radius: 200px;
+    text-decoration: none;
+    color: var(--tertiary-color);
+    gap: 20px; 
+    }
+
+
+ }
+
+/******************** PAGINAS ********************/
+
+.Paginas a {
+    width: 100px;
+    height: 150px;
+    display:flexbox;
+    padding-left: 38px;
+    text-decoration: none;
+    color: var(--tertiary-color);
+    font-size: 1,2rem;
+    gap: 5px;
+}
+
+.Barrita {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    background-color: var(--secondary-color);
+    
+    & i {
+        font-size: 15px;
+        margin-right: 200px;
+        margin-left: 200px;
+        color: var(--tertiary-color);
+       
+    }
+    
+    & p {
+        font-size: 1,5rem;
+        color: var(--tertiary-color);
+        font-weight: bold;
+    }
+
+
+}
+
+/******************** HOME ********************/
+.banner {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+
+
+    & img {
+        width: 250px;
+        height: 150px;
+        padding-left: 40px;
+        gap: 20px;
+    }
+}
+
+.banner-text {
+    width: 100%;
+    height: 150px;
+    align-items: center;
+    justify-content: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+    
+    & h1 {
+        font-size: 2rem;
+        color: var(--primary-color);
+        font-weight: bold;
+        text-align: center;
+    }
+
+    & h2 {
+        font-size: 1.5rem;
+        color: var(--tertiary-color);
+        text-align: center;
+    }
+}
